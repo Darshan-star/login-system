@@ -5,7 +5,7 @@
         $email = mysqli_real_escape_string($connect, trim($_POST['email']));
         $password = trim($_POST['password']);
 
-        $sql = mysqli_query($connect, "SELECT * FROM login where email = '$email'");
+        $sql = mysqli_query($connect, "SELECT * FROM login where email = '$email'"); 
         $count = mysqli_num_rows($sql);
 
             if($count > 0){
