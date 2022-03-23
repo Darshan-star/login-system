@@ -27,7 +27,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
-    <div class="container">
+    <div class="container"> 
         <a class="navbar-brand" href="#">User Password Recover</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
     </div>
 </nav>
 
-<main class="login-form">
+<main class="login-form"> 
     <div class="cotainer">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -69,7 +69,7 @@
 <?php 
     if(isset($_POST["recover"])){
         include('connect/connection.php');
-        $email = $_POST["email"];
+        $email = $_POST["email"]; 
 
         $sql = mysqli_query($connect, "SELECT * FROM login WHERE email='$email'");
         $query = mysqli_num_rows($sql);
